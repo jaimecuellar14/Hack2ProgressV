@@ -6,14 +6,44 @@
 
 <ion-content>
     <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide>
-          <h1>Slide 1</h1>
+        <ion-slide>         
+          <ion-card>
+              <ion-card-header>
+                <ion-card-title>Nuestro Hogar</ion-card-title>
+                <img src="assets/Image1.jpg">
+              </ion-card-header>
+            
+              <ion-card-content>
+                No tendremos una sociedad si destruimos el medio ambiente.
+              </ion-card-content>
+            </ion-card>     
         </ion-slide>
+
         <ion-slide>
-          <h1>Slide 2</h1>
+            <ion-card>
+                <ion-card-header>
+                  <ion-card-title>Nuestro futuro</ion-card-title>
+                  <img src="assets/Sembrar.jpg">
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Educar a los niños a cuidar y sembrar es darles un futuro digno. ¡Ellos también se lo merecen!
+                </ion-card-content>
+              </ion-card>
         </ion-slide>
+
         <ion-slide>
-          <h1>Slide 3</h1>
+          <ion-card class ="card">
+              <ion-card-header>
+                <ion-card-title>Plantas contra el hambre</ion-card-title>
+                <img src="assets/Image1.jpg">
+              </ion-card-header>
+            
+              <ion-card-content>
+                  ¡Es tu turno! Únete a nosotros para un mejor uso de los recursos naturales, una alimentación digna y un planeta verde.
+                  <ion-button expand="block" fill="outline" routerLink="tabs">¡A plantar!</ion-button>
+              </ion-card-content>
+            </ion-card>
         </ion-slide>
       </ion-slides>
 </ion-content>
