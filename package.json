@@ -1,0 +1,12 @@
+{
+  "name": "Hack2Progress2019",
+  "version": "1.0.0",
+  "description": "Backend para aplicacion de Hack2Progress",
+  "main": "index.js",
+  "repository": "git@github.com:jaimecuellar14/Hack2ProgressV.git",
+  "author": "Eddy macario <erml@pop-os.ubuntu>",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}
