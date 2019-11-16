@@ -4,12 +4,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content style="background-color:#778f51;">
     <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide>         
-          <ion-card>
+        <ion-slide style="background-color:#c9c8b4">         
+          <ion-card style="background-color:#089b28; color:white">
               <ion-card-header>
-                <ion-card-title>Nuestro Hogar</ion-card-title>
+                <ion-card-title style="color:white">Nuestro Hogar</ion-card-title>
                 <img src="assets/Image1.jpg">
               </ion-card-header>
             
@@ -19,10 +19,10 @@
             </ion-card>     
         </ion-slide>
 
-        <ion-slide>
-            <ion-card>
+        <ion-slide style="background-color:#c9c8b4">
+            <ion-card style="background-color:#089b28; color:white"> 
                 <ion-card-header>
-                  <ion-card-title>Nuestro futuro</ion-card-title>
+                  <ion-card-title style="color:white">Nuestro futuro</ion-card-title>
                   <img src="assets/Sembrar.jpg">
                 </ion-card-header>
               
@@ -32,18 +32,20 @@
               </ion-card>
         </ion-slide>
 
-        <ion-slide>
-          <ion-card class ="card">
+        <ion-slide style="background-color:#c9c8b4; " >
+          <ion-card class ="card" style="background-color:#089b28; color:white">
               <ion-card-header>
-                <ion-card-title>Plantas contra el hambre</ion-card-title>
-                <img src="assets/Image1.jpg">
+                <ion-card-title style="color:white">Plantas contra el hambre</ion-card-title>
+                <img src="assets/enviroment.png">
               </ion-card-header>
             
               <ion-card-content>
                   ¡Es tu turno! Únete a nosotros para un mejor uso de los recursos naturales, una alimentación digna y un planeta verde.
-                  <ion-button expand="block" fill="outline" routerLink="perfil">¡A plantar!</ion-button>
+                  <ion-button style="width: 300px;" routerLink="perfil" full>¡A plantar!</ion-button>
               </ion-card-content>
             </ion-card>
+
+            
         </ion-slide>
       </ion-slides>
 </ion-content>

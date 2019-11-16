@@ -1,8 +1,17 @@
 
-.invernadero ion-row{
+.invernadero ion-row ion-col{
     height: 100px;
-    border: 1px solid;
+    padding:0;
 }
-.invernadero ion-col{
-    border: 1px solid;
+
+.laTierra{
+   width: 100%;
+    height: 100%;
+}
+/*img{
+    width:20%;
+    height:20%;
+}*/
+.menu_frutas{
+    height: 200px;
 }

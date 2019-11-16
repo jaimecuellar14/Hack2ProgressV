@@ -30,6 +30,7 @@
     "cordova-plugin-device-motion": "^2.0.1",
     "cordova-plugin-geolocation": "^4.0.2",
     "core-js": "^2.5.4",
+    "ng2-dragula": "^2.1.1",
     "rxjs": "~6.5.1",
     "swiper": "^5.2.0",
     "tslib": "^1.9.0",

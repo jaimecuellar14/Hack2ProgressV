@@ -1,94 +1,106 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Plant
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid class="invernadero">
+  <!--<div>
+    <ion-grid>
+      <ion-col>
+        <ion-row>
+        <ion-grid *ngIf="intentos>0">
+            <div *ngFor="let item of frutas"dragula="DRAGULA" id ="NO">
+                <ion-row *ngFor="let item of frutas" size="6" style="width: 50%; margin:4%">
+                  
+                  <img [src]="item.src"/>
+                </ion-row>
+              </div>
+           
+          </ion-grid>
+          </ion-row>
+        </ion-col>
+      <ion-col>
+        
+      </ion-col>
+    </ion-grid>
+
     <ion-row>
-      <ion-col>1</ion-col>
-      <ion-col>2</ion-col>
-      <ion-col>3</ion-col>
-      <ion-col>4</ion-col>
-      <ion-col>5</ion-col>
+      <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+      <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+      <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+      <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+      <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
     </ion-row>
     <ion-row>
-        <ion-col>1</ion-col>
-        <ion-col>2</ion-col>
-        <ion-col>3</ion-col>
-        <ion-col>4</ion-col>
-        <ion-col>5</ion-col>
+      <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
       </ion-row>
       <ion-row>
-          <ion-col>1</ion-col>
-          <ion-col>2</ion-col>
-          <ion-col>3</ion-col>
-          <ion-col>4</ion-col>
-          <ion-col>5</ion-col>
+        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
         </ion-row>
         <ion-row>
-            <ion-col>1</ion-col>
-            <ion-col>2</ion-col>
-            <ion-col>3</ion-col>
-            <ion-col>4</ion-col>
-            <ion-col>5</ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+          <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
           </ion-row>
+        </div>-->
+        <ion-grid>
           <ion-row>
-              <ion-col>1</ion-col>
-              <ion-col>2</ion-col>
-              <ion-col>3</ion-col>
-              <ion-col>4</ion-col>
-              <ion-col>5</ion-col>
-            </ion-row>
-
-
-          </ion-grid>
-
- <ion-grid>
-   <ion-row>
-     <ion-col>
-       <ion-reorder>
-         <ion-item>
-           <ion-label>
-             Manzana
-           </ion-label>
-         </ion-item>
-       </ion-reorder>
-     </ion-col>
-     <ion-col>
-      <ion-reorder>
-        <ion-item>
-          <ion-label>
-            Pera
-          </ion-label>
-        </ion-item>
-      </ion-reorder>
-     </ion-col>
-   </ion-row>
-   <ion-row>
-     <ion-col>
-      <ion-reorder>
-        <ion-item>
-          <ion-label>
-            Fresa
-          </ion-label>
-        </ion-item>
-      </ion-reorder>
-     </ion-col>
-     <ion-col>
-        <ion-reorder>
-            <ion-item>
-              <ion-label>
-                Durazno
-              </ion-label>
-            </ion-item>
-          </ion-reorder>
-     </ion-col>
-   </ion-row>
- </ion-grid>
-
+            <ion-col size="2" class="menu_frutas">
+                <ion-row>
+                    <ion-grid *ngIf="intentos>0">
+                        <div *ngFor="let item of frutas"dragula="DRAGULA" id ="NO">
+                            <ion-row  size="6" style="width: 50%; margin-top:40%">
+                              <img [src]="item.src"/>
+                            </ion-row>
+                          </div>
+                       
+                      </ion-grid>
+                      </ion-row>
+            </ion-col>
+            <ion-col size="10" class="invernadero">
+                <ion-row>
+                    <ion-col dragula="DRAGULA" :class="tierra" ></ion-col>
+                    <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                    <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                    <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                    <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                      </ion-row>
+                      <ion-row>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        <ion-col dragula="DRAGULA" :class="tierra"></ion-col>
+                        </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
 
 </ion-content>
