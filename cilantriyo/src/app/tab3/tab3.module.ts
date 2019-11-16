@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab3Page } from './tab3.page';
+import {RoundProgressModule} from 'angular-svg-round-progressbar';
 
 @NgModule({
   imports: [
     IonicModule,
+    RoundProgressModule,
     CommonModule,
     FormsModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }])

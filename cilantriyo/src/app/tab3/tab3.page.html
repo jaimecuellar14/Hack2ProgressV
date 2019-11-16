@@ -1,9 +1,47 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Today's Challenge
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-card class ="card">
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">Bicycle time
+              <ion-icon name="bicycle" style = "color:#4c8dff;"></ion-icon>
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+                  <div class="current">
+                      <img class="circle-pic" src="assets/giphy.gif">
+                  </div>
+                  <round-progress 
+                  [current]="selectedRange"
+                  [max]="100"
+                  [color]="'#4c8dff'"
+                  [background]="'#eaeaea'"
+                  [radius]="80"
+                  [stroke]="10"
+                  [semicircle]="false"
+                  [rounded]="true"
+                  [clockwise]="true"
+                  [responsive]="false"
+                  [duration]="800"
+                  [animation]="'easeInOutQuart'"
+                  [animationDelay]="0"></round-progress>
+        
+                  <ion-progress-bar value={{nuevo}} buffer={{nuevo}} style="margin-top: 15%;margin-bottom: 3%;"></ion-progress-bar>
+                  <ion-icon name="analytics" class="el1" style="margin-bottom:5%; font-size: 20px;"></ion-icon>
+                  <ion-icon name="bicycle" class="espaciado el2" ></ion-icon>
+                  <ion-icon name="body" class="espaciado el3" ></ion-icon>
+                  <ion-icon name="color-fill" class="espaciado el4"></ion-icon>
+                  <ion-icon name="checkmark-circle" class="espaciado el5" style="margin-bottom:5%; font-size: 30px;"></ion-icon>      
+               
+                Usar la bicicleta es combatir con la contaminación de los autos en las ciudades, congestionamiento, sedentarismo y lo más importante, tiene grandes beneficios para el medio ambiente, para tu salud y bienestar.
+        </ion-card-content>
+      </ion-card>
+   
+</ion-content>

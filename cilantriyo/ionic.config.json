@@ -1,5 +1,7 @@
 {
   "name": "cilantriyo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
