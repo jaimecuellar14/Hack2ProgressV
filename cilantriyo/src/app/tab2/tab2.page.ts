@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { DragulaService } from 'ng2-dragula';
-import { Subscription } from 'rxjs';
+import { Subscription, Observable } from 'rxjs';
+
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-tab2',
@@ -11,6 +13,7 @@ export class Tab2Page {
   intentos:number=3;
   BAG = "DRAGULA";
   subs = new Subscription();
+  items: Observable<any[]>;
   num_columnas:any[]=[1,2,3,4,5];
   frutas:any[] = [
     {name:"Manzanas",src:"../assets/icon/apple.png"
@@ -25,9 +28,10 @@ export class Tab2Page {
     {name:"Palmera",src:"../assets/icon/palm-tree.png"}
   ];
 
-  constructor(private dragulaService: DragulaService) {
+  constructor(private dragulaService: DragulaService, private db: AngularFirestore) {
     
-      
+      this.items = db.collection("coordenadas").valueChanges();
+      console.log(this.items);
       this.subs.add(dragulaService.drag(this.BAG)
       .subscribe(({ el }) => {
         

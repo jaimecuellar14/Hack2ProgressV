@@ -11,11 +11,14 @@ import { AppComponent } from './app.component';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 import { DragulaModule } from 'ng2-dragula';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, DragulaModule.forRoot()],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, DragulaModule.forRoot(), 
+    AngularFireModule.initializeApp(environment.firebase)],
   providers: [
     StatusBar,
     SplashScreen,

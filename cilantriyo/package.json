@@ -15,6 +15,7 @@
   "dependencies": {
     "@angular/common": "~8.1.2",
     "@angular/core": "~8.1.2",
+    "@angular/fire": "^5.2.3",
     "@angular/forms": "~8.1.2",
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
@@ -30,6 +31,7 @@
     "cordova-plugin-device-motion": "^2.0.1",
     "cordova-plugin-geolocation": "^4.0.2",
     "core-js": "^2.5.4",
+    "firebase": "^7.4.0",
     "ng2-dragula": "^2.1.1",
     "rxjs": "~6.5.1",
     "swiper": "^5.2.0",
