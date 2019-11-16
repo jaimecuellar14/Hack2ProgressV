@@ -1,8 +1,10 @@
 
-.invernadero ion-row{
+.invernadero ion-row ion-col{
     height: 100px;
     border: 1px solid;
 }
-.invernadero ion-col{
-    border: 1px solid;
+
+img{
+    width:25px;
+    height:24px;
 }

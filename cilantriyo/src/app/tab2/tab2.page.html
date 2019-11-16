@@ -7,88 +7,57 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid class="invernadero">
+  <div>
+  <ion-grid class="invernadero" dragula="DRAGULA">
     <ion-row>
-      <ion-col>1</ion-col>
-      <ion-col>2</ion-col>
-      <ion-col>3</ion-col>
-      <ion-col>4</ion-col>
-      <ion-col>5</ion-col>
+        <ion-col dragula="DRAGULA">1</ion-col>
+        <ion-col dragula="DRAGULA">2</ion-col>
+        <ion-col dragula="DRAGULA">3</ion-col>
+        <ion-col dragula="DRAGULA">4</ion-col>
+        <ion-col dragula="DRAGULA">5</ion-col>
     </ion-row>
     <ion-row>
-        <ion-col>1</ion-col>
-        <ion-col>2</ion-col>
-        <ion-col>3</ion-col>
-        <ion-col>4</ion-col>
-        <ion-col>5</ion-col>
+        <ion-col dragula="DRAGULA">1</ion-col>
+            <ion-col dragula="DRAGULA">2</ion-col>
+            <ion-col dragula="DRAGULA">3</ion-col>
+            <ion-col dragula="DRAGULA">4</ion-col>
+            <ion-col dragula="DRAGULA">5</ion-col>
       </ion-row>
       <ion-row>
-          <ion-col>1</ion-col>
-          <ion-col>2</ion-col>
-          <ion-col>3</ion-col>
-          <ion-col>4</ion-col>
-          <ion-col>5</ion-col>
+          <ion-col dragula="DRAGULA">1</ion-col>
+            <ion-col dragula="DRAGULA">2</ion-col>
+            <ion-col dragula="DRAGULA">3</ion-col>
+            <ion-col dragula="DRAGULA">4</ion-col>
+            <ion-col dragula="DRAGULA">5</ion-col>
         </ion-row>
         <ion-row>
-            <ion-col>1</ion-col>
-            <ion-col>2</ion-col>
-            <ion-col>3</ion-col>
-            <ion-col>4</ion-col>
-            <ion-col>5</ion-col>
+            <ion-col dragula="DRAGULA">1</ion-col>
+            <ion-col dragula="DRAGULA">2</ion-col>
+            <ion-col dragula="DRAGULA">3</ion-col>
+            <ion-col dragula="DRAGULA">4</ion-col>
+            <ion-col dragula="DRAGULA">5</ion-col>
           </ion-row>
-          <ion-row>
-              <ion-col>1</ion-col>
-              <ion-col>2</ion-col>
-              <ion-col>3</ion-col>
-              <ion-col>4</ion-col>
-              <ion-col>5</ion-col>
-            </ion-row>
 
 
           </ion-grid>
-
- <ion-grid>
-   <ion-row>
-     <ion-col>
-       <ion-reorder>
-         <ion-item>
-           <ion-label>
-             Manzana
-           </ion-label>
-         </ion-item>
-       </ion-reorder>
-     </ion-col>
-     <ion-col>
-      <ion-reorder>
-        <ion-item>
-          <ion-label>
-            Pera
-          </ion-label>
-        </ion-item>
-      </ion-reorder>
-     </ion-col>
-   </ion-row>
-   <ion-row>
-     <ion-col>
-      <ion-reorder>
-        <ion-item>
-          <ion-label>
-            Fresa
-          </ion-label>
-        </ion-item>
-      </ion-reorder>
-     </ion-col>
-     <ion-col>
-        <ion-reorder>
-            <ion-item>
-              <ion-label>
-                Durazno
-              </ion-label>
-            </ion-item>
-          </ion-reorder>
-     </ion-col>
-   </ion-row>
- </ion-grid>
-
-
+        </div>
+<div>
+  <ion-grid>
+    <ion-row align-items-center>
+      <div dragula="DRAGULA">
+        <ion-col *ngFor="let item of frutas" size="6">
+          
+          <img [src]="item.src"/>
+        </ion-col>
+      </div>
+    </ion-row>
+    <ion-row align-items-center>
+      <div dragula="DRAGULA">
+        <ion-col *ngFor="let item of verduras" size="6">
+          <img [src]="item.src"/>
+        </ion-col>
+      </div>
+    </ion-row>
+  </ion-grid>
+</div>
 </ion-content>
